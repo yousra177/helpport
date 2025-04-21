@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Knowledge Portal</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    /* Inline styles for demonstration */
+    .notification-section {
+  width: 1100px;
+  height: 600px;
+  margin: 20px auto; /* Centers the section horizontally */
+  padding: 15px;
+  overflow-y: auto; /* Adds scrolling if content exceeds height */
+}
+
+    .notif-section {
+      padding: 10px;
+      margin-bottom: 10px;
+      background-color: #fff; /* Individual notification background */
+      border: 1px solid #ddd; /* Border for each notification */
+      border-radius: 5px; /* Rounded corners */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .notif-section h4 {
+      margin: 0;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .notif-section p {
+      margin: 5px 0 0;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-left">
+      <img src="aseets/Logo_Algérie_Télécom.svg.png" alt="Algérie Télécom Logo" class="logo">
+      <div class="search-container">
+        <input type="text" class="search-bar" placeholder="Search Algérie Télécom">
+        <i class="fas fa-search search-icon"></i>
+      </div>
+    </div>
+    
+    <div class="header-center">
+      <a href="home.html" class="nav-icon"><i class="fas fa-home"></i></a>
+      <a href="creatUser.html" class="nav-icon"><i class="fas fa-users"></i></a>
+      <a href="notification.html" class="nav-icon"><i class="fas fa-bell"></i></a>
+    </div>
+    <div class="theme-toggle">
+      <span class="sun">☀️</span>
+      <span class="moon">🌙</span>
+    </div>
+  </header>
+  
+  <div class="container">
+    <div class="sidebar">
+      <div class="dropdown">
+        <button class="profile-btn">
+          <img src="aseets/usericon.png" alt="Profile" class="profile-pic">
+          <span class="username" style="color: #000;">Lily</span>        </button>
+        <a href="EditProfile.html"><i class="fas fa-user"></i> Edit Profile</a>
+        <a href="#"><i class="fas fa-question-circle"></i> Help</a>
+        <a href="problemSved.html"><i class="fas fa-tools"></i> Problem Saved</a>
+        <a href="index.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+      </div>
+    </div>
+
+    <!-- Notification section -->
+    <section class="notification-section"> 
+      <div class="notif-section">
+        <h4>Username</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> 
+      </div> 
+      <div class="notif-section">
+        <h4>Username</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> 
+      </div> 
+      <div class="notif-section">
+        <h4>Username</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> 
+      </div> 
+      <div class="notif-section">
+        <h4>Username</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> 
+      </div> 
+    </section>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

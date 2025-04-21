@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="css/login.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+  <div class="container">
+    <img src="aseets/Logo_Algérie_Télécom.svg.png" alt="Algerie Telecom Logo" class="logo">
+    <h1>Login Page</h1>
+    <form action="/login" method="post">
+      <div class="log">
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+          <label for="password">Password:</label>
+          <input type="password" name="password" id="password" required>
+        </div>
+        <div>
+          <input type="submit" value="Login">
+        </div>
+        <div>
+          <a href="#" style="font-style: italic;">Forgot password?</a>
+        </div>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Knowledge Portal</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    .flex-container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding-top: 50px;
+      margin-left: 50px; /* Space for the sidebar */
+      margin-right: 50px;
+      width: 200%;
+      max-width: 900px; /* Increased the max-width for a wider container */
+
+
+    }
+    .containerre {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      width: 200%;
+      max-width: 900px; 
+    }
+    .select-wrapper {
+      margin: 10px 0;
+    }
+    .custom-select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .containerre label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    .containerre input[type="text"],
+    .containerre input[type="email"],
+    .containerre input[type="password"] {
+      width: 99%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    
+   
+  
+.button-container {
+  display: flex;
+  justify-content: space-between; /* Adjusts spacing between buttons */
+  gap: 10px; /* Adds spacing between buttons */
+}
+
+.button-container button  {
+  flex: 1; /* Ensures buttons are evenly sized */
+  padding: 10px;
+  background-color: #004080;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button-container .btt:hover {
+  background-color: #00A65A;
+}
+
+.button-container .bttt:hover {
+  background-color: #a60800;
+}
+
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-left">
+      <img src="aseets/Logo_Algérie_Télécom.svg.png" alt="Algérie Télécom Logo" class="logo">
+      <div class="search-container">
+        <input type="text" class="search-bar" placeholder="Search Algérie Télécom">
+        <i class="fas fa-search search-icon"></i>
+      </div>
+    </div>
+    <div class="header-center">
+      <a href="home.html" class="nav-icon"><i class="fas fa-home"></i></a>
+      <a href="createUser.html" class="nav-icon"><i class="fas fa-users"></i></a>
+      <a href="notification.html" class="nav-icon"><i class="fas fa-bell"></i></a>
+    </div>
+    <div class="theme-toggle">
+      <span class="sun">☀️</span>
+      <span class="moon">🌙</span>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="sidebar">
+      <div class="dropdown">
+        <button class="profile-btn">
+          <img src="aseets/usericon.png" alt="Profile" class="profile-pic">
+          <span class="username" style="color: #000;">Lily</span>        </button>
+        <a href="EditProfile.html"><i class="fas fa-user"></i> Edit Profile</a>
+        <a href="#"><i class="fas fa-question-circle"></i> Help</a>
+        <a href="problemSved.html"><i class="fas fa-tools"></i> Problem Saved</a>
+        <a href="index.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+      </div>
+    </div>
+
+    <div class="flex-container">
+      <div class="containerre">
+        <form action="submitForm.php" method="POST">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="numberphone">Phone Number:</label>
+          <input type="text" id="numberphone" name="numberphone" required>
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+
+          <label for="role">Role:</label>
+          <div class="select-wrapper">
+            <select name="role" id="role" class="custom-select" required>
+              <option value="" disabled selected>Choose a role</option>
+              <option value="admin">Admin</option>
+              <option value="chef_dep">Chef Department</option>
+              <option value="it_user">IT User</option>
+            </select>
+          </div>
+
+          <label for="department">Department:</label>
+          <div class="select-wrapper">
+            <select name="department" id="department" class="custom-select" required>
+              <option value="" disabled selected>Choose a department</option>
+              <option value="deeis">Département Études et Intégration Solutions Informatiques</option>
+              <option value="diei">Département Internet et Intranet</option>
+              <option value="dda">Département des Acquisitions</option>
+              <option value="dadam">Département Administration des Applications Métiers</option>
+            </select>
+          </div>
+
+          <div class="button-container">
+            <button type="submit" class="btt">Submit</button>
+            <button type="button" class="bttt">Cancel</button>
+          </div>
+          
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
